@@ -7,6 +7,8 @@ import Counter from '../components/Counter';
 import * as pageActions from '../actions/PageActions';
 import * as countActions from '../actions/CountActions';
 
+import { Link } from 'react-router';
+
 class App extends Component {
     /*componentWillMount() {
         const { getPhotos } = this.props.pageActions;
@@ -28,6 +30,15 @@ class App extends Component {
                 />
                 <hr/>
                 <Counter count={count.count} setCount={setCount}/>
+                <hr/>
+                <hr/>
+                <div className='container'>
+                    <ul className='nav nav-pills'>
+                        <li><Link to='/admin'>Админка</Link></li>
+                        <li><Link to='/list'>Список жанров</Link></li>
+                    </ul>
+                    {this.props.children}
+                </div>
             </div>
         )
     }

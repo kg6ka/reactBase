@@ -1,10 +1,13 @@
-import 'babel-polyfill'
-import React from 'react'
-import { render } from 'react-dom'
+import 'babel-polyfill';
+import React from 'react';
+import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 
-import App from './containers/mainApp';
+import { Router, browserHistory } from 'react-router';
+
+import { routes } from './routes';
+
 import './styles/app.css';
 
 const appBox = document.getElementById('app');
@@ -13,7 +16,7 @@ const store = configureStore();
 render(
     <Provider store={store}>
         <div className="app">
-            <App />
+            <Router history={browserHistory} routes={routes} />
         </div>
     </Provider>,
     appBox

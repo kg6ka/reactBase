@@ -4,13 +4,13 @@ const webpackHotMiddleware = require('webpack-hot-middleware');
 const config = require('./webpack.config');
 
 const app = new (require('express'))();
-const port = 3000;
+const port = 3001;
 
 const compiler = webpack(config);
 app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath }));
 app.use(webpackHotMiddleware(compiler));
 
-app.get("/", function(req, res) {
+app.get(/.*/, function(req, res) {
     res.sendFile(__dirname + '/index.html')
 });
 
