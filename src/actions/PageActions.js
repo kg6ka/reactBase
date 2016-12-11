@@ -7,7 +7,6 @@ export function getPhotos(year) {
             type: GET_PHOTOS_REQUEST,
             payload: year
         });
-
         /*setTimeout(() => {
             dispatch({
                 type: GET_PHOTOS_SUCCESS,
@@ -15,7 +14,7 @@ export function getPhotos(year) {
             })
         }, 1000);*/
         getStuff()
-            .then(res => console.log('stuff', res))
+            .then(res => console.log('SUCCESS', res))
             .catch(err => console.log('ERROR', err))
     }
 }
