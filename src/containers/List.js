@@ -5,7 +5,7 @@ export default class List extends Component {
     render() {
         return (
             <div>
-                <h2>Admin/List</h2>
+                <h2>List</h2>
                 <div>
                     <div className='row'>
                         <div className='col-md-12'>

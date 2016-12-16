@@ -32,6 +32,7 @@ class App extends Component {
                 <Counter count={count.count} setCount={setCount}/>
                 <hr/>
                 <hr/>
+                {" "}
                 <div className='container'>
                     <ul className='nav nav-pills'>
                         <li><Link to='/admin'>Админка</Link></li>

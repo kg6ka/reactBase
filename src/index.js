@@ -8,7 +8,7 @@ import { Router, browserHistory } from 'react-router';
 
 import { routes } from './routes';
 
-import './styles/app.css';
+// import './styles/app.css';
 
 const appBox = document.getElementById('app');
 const store = configureStore();

@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "item1",
+      "color": "black"
+    },
+    {
+      "id": 2,
+      "name": "item2",
+      "color": "red"
+    },
+    {
+      "id": 3,
+      "name": "item3",
+      "color": "green"
+    }
+  ]
+}

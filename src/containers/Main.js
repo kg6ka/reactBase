@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import Admin from '../containers/Admin';
+import { Link } from 'react-router';
+/*import Admin from '../containers/Admin';
 import List from '../containers/List';
 import Detail from '../containers/Detail';
-import App from '../containers/mainApp';
+import App from '../containers/mainApp';*/
 
 
 export default class Main extends Component {
-    constructor(props) {
+    /*constructor(props) {
         super(props);
         this.state = {
             route: window.location.hash.substr(1)
@@ -18,9 +19,9 @@ export default class Main extends Component {
                 route: window.location.hash.substr(1)
             })
         })
-    }
+    }*/
     render() {
-        let Child;
+       /* let Child;
 
         switch (this.state.route) {
             case '/home': Child = App; break;
@@ -28,19 +29,17 @@ export default class Main extends Component {
             case '/admin': Child = Admin; break;
             case '/admin/list': Child = List; break;
             default: Child = App;
-        }
+        }*/
 
 
         return (
             <div className='container'>
-                <h1>My App</h1>
                 <ul>
-                    <li><a href='#/home'>Home</a></li>
-                    <li><a href='#/detail'>Detail</a></li>
-                    <li><a href='#/admin'>Admin</a></li>
-                    <li><a href="#/admin/list">List</a></li>
+                    <li><Link to='/admin'>Admin</Link></li>
+                    <li><Link to='/list'>List</Link></li>
                 </ul>
-                <Child />
+                {/*<Child />*/}
+                {this.props.children}
             </div>
         )
 

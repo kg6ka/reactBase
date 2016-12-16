@@ -16,9 +16,8 @@ export const routes = (
             <Route path='/detail/:detail' component={Detail} >
                 <Route path='/detail/:detail/:release' component={Release} />
             </Route>
-            <Route path='/admin' component={Admin} >
-                <Route path='/list' component={List} />
-            </Route>
+            <Route path='/admin' component={Admin} />
+            <Route path='/list' component={List} />
         </Route>
         <Route path='*' component={NotFound} />
     </div>
