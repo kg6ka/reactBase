@@ -35,8 +35,8 @@ class App extends Component {
                 {" "}
                 <div className='container'>
                     <ul className='nav nav-pills'>
-                        <li><Link to='/admin'>Админка</Link></li>
-                        <li><Link to='/list'>Список жанров</Link></li>
+                        <li><Link to='admin'>Back to Admin</Link></li>
+                        <li><Link to='list'>List</Link></li>
                     </ul>
                     {this.props.children}
                 </div>

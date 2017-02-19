@@ -16,13 +16,29 @@ export default class List extends Component {
                         <div className='col-md-12'>
                             <ul className='list'>
                                 <li className='list__item'>
-                                    <Link to='/genre/house/'>House</Link>
+                                    <Link to='/detail/house/'>House</Link>
                                 </li>
                                 <li className='list__item'>
-                                    <Link to='/genre/dnb/'>Drum and bass</Link>
+                                    <Link to='/detail/dnb/'>Drum and bass</Link>
                                 </li>
                                 <li className='list__item'>
-                                    <Link to='/genre/hip-hop/'>Hip-hop</Link>
+                                    <Link to='/detail/hip-hop/'>Hip-hop</Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className='row'>
+                        <div className='col-md-12'>
+                            <ul className='list'>
+                                <li className='list__item'>
+                                    <Link to='/list/house/'>new House</Link>
+                                </li>
+                                <li className='list__item'>
+                                    <Link to='/list/dnb/'>new Drum and bass</Link>
+                                </li>
+                                <li className='list__item'>
+                                    <Link to='/list/hip-hop/'>new Hip-hop</Link>
                                 </li>
                             </ul>
                         </div>
