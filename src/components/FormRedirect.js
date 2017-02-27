@@ -15,11 +15,11 @@ export default class Form extends Component {
         console.log(this.props.route);
         this.context.router.setRouteLeaveHook(this.props.route, this.routerWillLeave)
     }
-    routerWillLeave() {
-        let answer = window.confirm('Вы уверены?');
-        if (!answer) return false;
-        // return 'Вы уверены?'
-    }
+    // routerWillLeave() {
+    //     let answer = window.confirm('Вы уверены?');
+    //     if (!answer) return false;
+    //     // return 'Вы уверены?'
+    // }
     render() {
         return (
             <div className='row'>

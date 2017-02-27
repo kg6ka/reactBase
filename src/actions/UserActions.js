@@ -15,7 +15,7 @@ export function login(payload) {
 
         dispatch({
             type: LOGIN_REQUEST
-        })
+        });
 
         setTimeout(() => {
             dispatch({
@@ -24,15 +24,15 @@ export function login(payload) {
                     name: payload.name,
                     isAuthenticated: true
                 }
-            })
+            });
 
             dispatch({
                 type: ROUTING,
                 payload: {
-                    method: 'push',
+                    method: 'replace',
                     nextUrl: '/admin'
                 }
-            })
+            });
         },2000)
     }
 }

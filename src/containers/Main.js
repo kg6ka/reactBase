@@ -21,6 +21,7 @@ export default class Main extends Component {
     //     this.setState({ showResults });
     // }
     render() {
+        console.log('props', this.props);
         return (
             <div className='container'>
                 <ul>

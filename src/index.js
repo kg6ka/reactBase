@@ -9,6 +9,7 @@ import { Router, browserHistory } from 'react-router';
 import { routes } from './routes';
 
 // import './styles/app.css';
+import commonStyles from './styles/common.scss'; //eslint-disable-line no-unused-vars
 
 const appBox = document.getElementById('app');
 const store = configureStore();
